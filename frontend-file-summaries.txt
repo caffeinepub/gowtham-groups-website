@@ -1,0 +1,14 @@
+{
+  "frontend/src/index.css": "Global styles with professional corporate color palette using warm earth tones (terracotta, amber) and sophisticated grays in OKLCH format for both light and dark modes.",
+  "frontend/tailwind.config.js": "Extended Tailwind configuration with custom corporate colors, Playfair Display font for headings, Inter for body text, custom shadows, and fade-in animations.",
+  "frontend/src/App.tsx": "Main application component that renders the complete single-page layout with Header, Hero, About, Services, Contact, and Footer sections.",
+  "frontend/src/components/Header.tsx": "Sticky navigation header with logo, smooth-scrolling menu items, mobile hamburger menu, and scroll-based background transparency effects.",
+  "frontend/src/components/Hero.tsx": "Full-screen hero section with background image overlay, company branding, tagline, and prominent call-to-action buttons.",
+  "frontend/src/components/About.tsx": "About section displaying company overview, mission, vision, and core values in a three-column card layout with icons.",
+  "frontend/src/components/Services.tsx": "Services section showcasing three main business offerings (Manufacturing, Logistics, Retail) in a responsive grid with images and feature lists.",
+  "frontend/src/components/Contact.tsx": "Contact section with company information cards (address, phone, email) fetched from backend and a working inquiry form with validation.",
+  "frontend/src/components/Footer.tsx": "Multi-column footer with company info, quick links, social media icons, copyright notice, and Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/hooks/useContactInfo.ts": "React Query hook to fetch contact information from the backend using the getContactInfo method.",
+  "frontend/src/hooks/useSubmitInquiry.ts": "React Query mutation hook to submit inquiry form data to the backend using the submitInquiry method.",
+  "frontend/src/main.tsx": "Application entry point with QueryClient, InternetIdentityProvider, and Sonner toast notifications provider setup."
+}

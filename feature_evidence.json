@@ -1,0 +1,140 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-hero-section-with-company-branding-tagline-and-prominent-call-to-action-button-that-welcomes-visitors-to-gowtham-groups",
+      "featureTitle": "Create a hero section with company branding, tagline, and prominent call-to-action button that welcomes visitors to Gowtham Groups",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Hero.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-an-about-us-section-describing-gowtham-groups-company-overview-mission-vision-and-core-values",
+      "featureTitle": "Implement an About Us section describing Gowtham Groups' company overview, mission, vision, and core values",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/About.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-services-products-section-showcasing-gowtham-groups-business-offerings-with-cards-or-tiles-for-each-service-category",
+      "featureTitle": "Create a Services/Products section showcasing Gowtham Groups' business offerings with cards or tiles for each service category",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Services.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-a-contact-section-with-company-contact-information-including-address-phone-email-and-a-contact-form-for-inquiries",
+      "featureTitle": "Build a Contact section with company contact information including address, phone, email, and a contact form for inquiries",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Contact.tsx",
+        "frontend/src/hooks/useContactInfo.ts",
+        "frontend/src/hooks/useSubmitInquiry.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-a-responsive-navigation-header-with-logo-and-menu-items-linking-to-different-sections-home-about-services-contact",
+      "featureTitle": "Create a responsive navigation header with logo and menu items linking to different sections (Home, About, Services, Contact)",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Header.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-implement-a-footer-section-with-company-information-quick-links-social-media-icons-and-copyright-notice",
+      "featureTitle": "Implement a footer section with company information, quick links, social media icons, and copyright notice",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Footer.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-the-website-with-a-professional-corporate-visual-theme-using-a-sophisticated-color-palette-with-elegant-typography-and-modern-layout-patterns-suitable-for-a-business-group",
+      "featureTitle": "Design the website with a professional, corporate visual theme using a sophisticated color palette with elegant typography and modern layout patterns suitable for a business group",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

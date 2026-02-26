@@ -1,0 +1,167 @@
+{
+  "kind": "build_request",
+  "title": "Create corporate website for Gowtham Groups",
+  "projectName": "Gowtham Groups",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a hero section with company branding, tagline, and prominent call-to-action button that welcomes visitors to Gowtham Groups",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a similar website like this https://www.danielmerchandising.co.in/ for gowtham groups"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero section displays company name 'Gowtham Groups'",
+        "Includes tagline or mission statement",
+        "Contains prominent CTA button",
+        "Uses full-width layout with background image or color"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement an About Us section describing Gowtham Groups' company overview, mission, vision, and core values",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a similar website like this https://www.danielmerchandising.co.in/ for gowtham groups"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Section includes company description",
+        "Displays mission and vision statements",
+        "Lists core values or company principles",
+        "Uses professional layout with proper spacing"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create a Services/Products section showcasing Gowtham Groups' business offerings with cards or tiles for each service category",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a similar website like this https://www.danielmerchandising.co.in/ for gowtham groups"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Displays multiple service/product categories",
+        "Each category has icon or image, title, and brief description",
+        "Uses grid or card-based layout",
+        "Responsive design for mobile and desktop"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build a Contact section with company contact information including address, phone, email, and a contact form for inquiries",
+      "target": "both",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a similar website like this https://www.danielmerchandising.co.in/ for gowtham groups"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Displays company contact details (address, phone, email)",
+        "Includes working contact form with name, email, subject, and message fields",
+        "Form validates required fields before submission",
+        "Backend stores contact form submissions",
+        "User receives confirmation after successful submission"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create a responsive navigation header with logo and menu items linking to different sections (Home, About, Services, Contact)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a similar website like this https://www.danielmerchandising.co.in/ for gowtham groups"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Navigation bar is fixed or sticky at top",
+        "Includes Gowtham Groups logo/branding",
+        "Menu items navigate to corresponding sections",
+        "Mobile-responsive with hamburger menu on small screens",
+        "Active section is highlighted in navigation"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Implement a footer section with company information, quick links, social media icons, and copyright notice",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "create a similar website like this https://www.danielmerchandising.co.in/ for gowtham groups"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Footer contains company tagline or brief description",
+        "Includes quick links to main sections",
+        "Displays social media icons (LinkedIn, Facebook, Twitter, etc.)",
+        "Shows copyright notice with current year",
+        "Uses professional multi-column layout"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Design the website with a professional, corporate visual theme using a sophisticated color palette with elegant typography and modern layout patterns suitable for a business group",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Uses professional color scheme (avoid blue and purple unless specifically corporate brand colors)",
+        "Typography is clean and readable with proper hierarchy",
+        "Layout follows modern corporate design patterns",
+        "Consistent spacing and visual rhythm throughout",
+        "Design conveys trust, professionalism, and stability"
+      ]
+    }
+  ],
+  "constraints": [
+    "Must follow single-actor Motoko backend architecture",
+    "Frontend must use React with TypeScript, Tailwind CSS, and React Query",
+    "Do not modify immutable frontend paths (useInternetIdentity.ts, useActor.ts, main.tsx, components/ui)"
+  ],
+  "nonGoals": [
+    "E-commerce functionality or product catalog",
+    "User authentication or member login system",
+    "Blog or news section",
+    "Multi-language support",
+    "Advanced analytics or tracking integration",
+    "Payment processing",
+    "Real-time chat or customer support features"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Corporate hero background image with modern business aesthetic (hero-bg.dim_1920x1080.png)",
+      "Professional company logo for Gowtham Groups with transparent background (gowtham-logo.dim_400x200.png)",
+      "Service icon for manufacturing or production operations (service-manufacturing.dim_256x256.png)",
+      "Service icon for logistics or distribution (service-logistics.dim_256x256.png)",
+      "Service icon for retail or merchandising (service-retail.dim_256x256.png)",
+      "About section background with subtle corporate pattern (about-bg.dim_1200x800.png)"
+    ],
+    "edits": []
+  }
+}

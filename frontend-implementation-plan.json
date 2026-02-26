@@ -1,0 +1,174 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Gowtham Groups Corporate Website Frontend Implementation",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create hero section with company branding, tagline, and call-to-action button",
+      "acceptanceCriteria": [
+        "Hero section displays company name 'Gowtham Groups'",
+        "Includes tagline or mission statement",
+        "Contains prominent CTA button",
+        "Uses full-width layout with background image or color"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "create",
+          "description": "Create Hero component with company branding 'Gowtham Groups', tagline, CTA button, and full-width layout. Use the generated hero background image at frontend/public/assets/generated/hero-bg.dim_1920x1080.png and company logo at frontend/public/assets/generated/gowtham-logo.dim_400x200.png as static assets."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Hero component at the top of the main page layout"
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Implement About Us section with company overview, mission, vision, and core values",
+      "acceptanceCriteria": [
+        "Section includes company description",
+        "Displays mission and vision statements",
+        "Lists core values or company principles",
+        "Uses professional layout with proper spacing"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/About.tsx",
+          "operation": "create",
+          "description": "Create About component displaying Gowtham Groups company description, mission and vision statements, and core values. Use professional layout with proper spacing and incorporate the generated background image at frontend/public/assets/generated/about-bg.dim_1200x800.png as a section background."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render About component after the Hero section"
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Create Services/Products section with cards showcasing business offerings",
+      "acceptanceCriteria": [
+        "Displays multiple service/product categories",
+        "Each category has icon or image, title, and brief description",
+        "Uses grid or card-based layout",
+        "Responsive design for mobile and desktop"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Services.tsx",
+          "operation": "create",
+          "description": "Create Services component with grid/card layout showcasing Gowtham Groups business offerings. Use generated service icons: frontend/public/assets/generated/service-manufacturing.dim_256x256.png for manufacturing operations, frontend/public/assets/generated/service-logistics.dim_256x256.png for logistics/distribution, and frontend/public/assets/generated/service-retail.dim_256x256.png for retail/merchandising. Implement responsive grid layout."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Services component after the About section"
+        }
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "summary": "Build Contact section with company information and inquiry submission form",
+      "acceptanceCriteria": [
+        "Displays company contact details (address, phone, email)",
+        "Includes working contact form with name, email, subject, and message fields",
+        "Form validates required fields before submission",
+        "User receives confirmation after successful submission"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Contact.tsx",
+          "operation": "create",
+          "description": "Create Contact component with two sections: company contact information display (fetched from backend via getContactInfo) and inquiry form with name, email, and message fields. Implement form validation, call submitInquiry backend function on submission, and show success/error feedback to user."
+        },
+        {
+          "path": "frontend/src/hooks/useContactInfo.ts",
+          "operation": "create",
+          "description": "Create React Query hook to fetch contact information from backend using getContactInfo method"
+        },
+        {
+          "path": "frontend/src/hooks/useSubmitInquiry.ts",
+          "operation": "create",
+          "description": "Create React Query mutation hook to submit inquiry form data using submitInquiry backend method"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Contact component after the Services section"
+        }
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "summary": "Create responsive navigation header with logo and section menu",
+      "acceptanceCriteria": [
+        "Navigation bar is fixed or sticky at top",
+        "Includes Gowtham Groups logo/branding",
+        "Menu items navigate to corresponding sections",
+        "Mobile-responsive with hamburger menu on small screens",
+        "Active section is highlighted in navigation"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "create",
+          "description": "Create Header component with sticky/fixed navigation bar, Gowtham Groups logo (using frontend/public/assets/generated/gowtham-logo.dim_400x200.png), menu items for Home, About, Services, and Contact sections with smooth scroll navigation, mobile hamburger menu, and active section highlighting"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Header component at the top of the application, before all other sections"
+        }
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "summary": "Implement footer with company information, quick links, social media, and copyright",
+      "acceptanceCriteria": [
+        "Footer contains company tagline or brief description",
+        "Includes quick links to main sections",
+        "Displays social media icons (LinkedIn, Facebook, Twitter, etc.)",
+        "Shows copyright notice with current year",
+        "Uses professional multi-column layout"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "create",
+          "description": "Create Footer component with multi-column layout containing company tagline/description, quick links to main sections (Home, About, Services, Contact), social media icons for LinkedIn, Facebook, Twitter, and copyright notice with dynamic current year"
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render Footer component at the bottom of the application, after all other sections"
+        }
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "summary": "Design professional corporate visual theme with sophisticated styling and modern layout",
+      "acceptanceCriteria": [
+        "Uses professional color scheme (avoid blue and purple unless specifically corporate brand colors)",
+        "Typography is clean and readable with proper hierarchy",
+        "Layout follows modern corporate design patterns",
+        "Consistent spacing and visual rhythm throughout",
+        "Design conveys trust, professionalism, and stability"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Update global styles with professional corporate color palette (using warm neutrals, sophisticated grays, and accent colors that avoid blue/purple), establish typography hierarchy with clean readable fonts, and set consistent spacing variables"
+        },
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend Tailwind configuration with custom corporate color palette, typography scale for professional hierarchy, and spacing utilities to support consistent visual rhythm throughout the application"
+        }
+      ]
+    }
+  ]
+}

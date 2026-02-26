@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Motoko actor defining contact info storage and inquiry submission/retrieval endpoints with in-memory Map storage for inquiries and mutable contact information.",
+  "feature_evidence.json": "Feature evidence report documenting five implemented features (hero, about, services, contact, header, footer) with associated files, components, and test IDs.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of frontend files describing styling, components, hooks, and application structure for the Gowtham Groups website.",
+  "frontend/index.css": "Tailwind CSS configuration with custom CSS variables for light and dark themes using OKLCH color space for corporate branding colors.",
+  "frontend/index.html": "HTML entry point with root div and module script reference to main.tsx for the Gowtham Groups website.",
+  "frontend/src/App.tsx": "Main React component rendering the complete single-page layout with Header, Hero, About, Services, Contact, and Footer sections.",
+  "frontend/src/components/About.tsx": "About section component displaying company overview with mission, vision, and values in a three-column card layout with icons.",
+  "frontend/src/components/Contact.tsx": "Contact section with form validation, backend-fetched contact info cards, and inquiry submission using React Query hooks with toast notifications.",
+  "frontend/src/components/Footer.tsx": "Footer component with company info, quick navigation links, social media icons, copyright notice, and Caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/Header.tsx": "Fixed header component with logo, desktop/mobile navigation menu, scroll detection for styling changes, and smooth scrolling to page sections (hero, about, services, contact).",
+  "frontend/src/components/Hero.tsx": "Hero section component with background image, gradient overlay, headline text, and two CTA buttons that scroll to contact and about sections.",
+  "frontend/src/components/Services.tsx": "Services section displaying three service cards (Manufacturing, Logistics, Retail) with images, descriptions, and feature lists in a responsive grid layout.",
+  "frontend/src/hooks/useActor.ts": "React Query hook that creates and manages an ICP backend actor instance based on Internet Identity authentication state, invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useContactInfo.ts": "React Query hook that fetches contact information from the backend actor using the getContactInfo method.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context provider and hook for Internet Identity authentication, managing login/logout flow, identity state, and AuthClient lifecycle with configurable options.",
+  "frontend/src/hooks/useSubmitInquiry.ts": "React Query mutation hook that submits inquiry data (name, email, message) to the backend actor and invalidates the inquiries query cache on success.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom CSS variables defining a warm corporate color palette (charcoal, terracotta, amber) for light and dark themes using OKLCH color space.",
+  "frontend/src/main.tsx": "Application entry point that renders the App component wrapped with QueryClientProvider for React Query and InternetIdentityProvider for authentication.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending the default theme with custom colors (using OKLCH), fonts (Inter, Playfair Display), shadows, animations (accordion, fade-in), and container settings.",
+  "project_state.json": "Project configuration for Gowtham Groups corporate website inspired by danielmerchandising.co.in, defining 7 implemented features (hero, about, services, contact, navigation, footer, corporate design) and image requirements for logos, service icons, and backgrounds."
+}
